@@ -1,0 +1,4 @@
+#Create a program that ask user to input 2 numbers. Print the sum of the two numbers.
+num_01 = float(input("Input your first number: "))
+num_02 = float(input("Input your second number: "))
+print(f"Sum: {num_01 + num_02}")
