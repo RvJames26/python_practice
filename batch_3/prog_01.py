@@ -5,7 +5,9 @@ for i in range(0,10):
     numbers = int(input("Enter number:"))
     final_number.append(numbers)
 for i in final_number:
-    if final_number.count(i) >= 1:
+    if final_number.count(i) == 1:
         print(i, end=",")
+        continue
+    if final_number.count(i) <= 1:
         continue
 print(num_set)
