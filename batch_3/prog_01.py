@@ -10,4 +10,3 @@ for i in final_number:
         continue
     if final_number.count(i) <= 1:
         continue
-print(num_set)
