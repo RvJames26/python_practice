@@ -4,5 +4,5 @@
 # Input: 143
 # Output: 000143
 number = int(input("Input number: "))
-correct_output = number.zfill(4)
-print(correct_output)
+formatted = f"Output: {number:04}"
+print(formatted)
