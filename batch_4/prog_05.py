@@ -1,13 +1,14 @@
 #Create a program that ask user to input a number, continue asking until the user input is invalid. Display the average.
 nums = []
-nums_ask = 0
-nums_ask += 1
-num_start = 0
+attempt = 0
 while True:
+    attempt += 1
     try:
-        for i in range(nums_ask):
-            given_nums = float(input("Input numbers: "))
-            num_start += i
+        given_nums = float(input("Input numbers: "))
+        nums.append(given_nums)
+        total = sum(nums)
+        average = total / attempt
     except ValueError:
         print("Invalid Input")
-        print(num_start / nums_ask)
+        print(f"Average: {average}")
+        break
